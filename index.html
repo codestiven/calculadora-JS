@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/calculadora.png" type="image/x-icon">
 </head>
 
 <body>
@@ -18,8 +19,8 @@
             <div class="numeros">
 
                     <button id="clear">AC</button>
-                    <button id="delete">BORRAR</button>
-                    <button onclick="digitos('/')">/</button>
+                    <button id="delete">BO</button>
+                    <button onclick="digitos('/')" class="operadore_btn">/</button>
 
 
                     <button id="siete" onclick="digitos(7)">7</button>
@@ -41,9 +42,9 @@
             </div>
 
             <div class="operadores">
-                <button onclick="digitos('*')">*</button>
-                <button onclick="digitos('-')">-</button>
-                <button onclick="digitos('+')">+</button>
+                <button onclick="digitos('*')" class="operadore_btn">*</button>
+                <button onclick="digitos('-')" class="operadore_btn">-</button>
+                <button onclick="digitos('+')" class="operadore_btn suma">+</button>
                 <button class="igual" id="result"> = </button>
             </div>
            
