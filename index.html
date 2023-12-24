@@ -11,43 +11,46 @@
 <body>
     <div class="calculadora">
         <div class="screen">
-            <h4>Calculadora</h4>
-            <h1>50-515</h1>
+            <h4 id="title"></h4>
+            <h1 id="screen"></h1>
         </div>
         <div class="btns">
             <div class="numeros">
 
-                    <button>AC</button>
-                    <button>BORRAR</button>
-                    <button>/</button>
+                    <button id="clear">AC</button>
+                    <button id="delete">BORRAR</button>
+                    <button onclick="digitos('/')">/</button>
 
 
-                    <button id="siete">7</button>
-                    <button id="ocho">8</button>
-                    <button id="nueve">9</button>
+                    <button id="siete" onclick="digitos(7)">7</button>
+                    <button id="ocho" onclick="digitos(8)">8</button>
+                    <button id="nueve " onclick="digitos(9)">9</button>
                 
-                    <button id="cuatro">4</button>
-                    <button id="cinco">5</button>
-                    <button id="seis">6</button>
+                    <button id="cuatro" onclick="digitos(4)">4</button>
+                    <button id="cinco" onclick="digitos(5)">5</button>
+                    <button id="seis" onclick="digitos(6)">6</button>
                 
-                    <button id="uno">1</button>
-                    <button id="dos">2</button>
-                    <button id="tres">3</button>
+                    <button id="uno" onclick="digitos(1)">1</button>
+                    <button id="dos" onclick="digitos(2)">2</button>
+                    <button id="tres" onclick="digitos(3)">3</button>
 
 
-                    <button class="cero">0</button>
-                    <button>.</button>
+                    <button class="cero" onclick="digitos(0)">0</button>
+                    <button id="punto" onclick="digitos('.')">.</button>
 
             </div>
 
             <div class="operadores">
-                <button>*</button>
-                <button>-</button>
-                <button>+</button>
-                <button class="igual"> = </button>
+                <button onclick="digitos('*')">*</button>
+                <button onclick="digitos('-')">-</button>
+                <button onclick="digitos('+')">+</button>
+                <button class="igual" id="result"> = </button>
             </div>
            
         </div>
+
+
+        <script src="js/main.js"></script>
     </div>
 </body>
 
